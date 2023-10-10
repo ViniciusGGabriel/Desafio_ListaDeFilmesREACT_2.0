@@ -1,0 +1,48 @@
+h1 {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 13px;
+  text-align: center;
+  background-image: linear-gradient($white, $white);
+  background-size: 100% 20%;
+  background-repeat: repeat-x;
+  background-position: 0% calc(100% - -3px);
+  transition: 0.3s;
+  width: 40%;
+  &:hover {
+    background-size: 100% 110%;
+    color: $dark-body;
+  }
+}
+@media screen and (min-width: 1000px) {
+  div#cardPopular {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card {
+      min-width: 540px;
+      width: 20%;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.75s ease-in-out;
+      margin: 0px 10px 0px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div#cardPopular {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card {
+      width: 80%;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.75s ease-in-out;
+      margin: 0px 10px 0px 10px;
+    }
+  }
+}

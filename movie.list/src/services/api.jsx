@@ -47,19 +47,3 @@ export const fetchNowPlay = async () => {
     throw error;
   }
 };
-
-export const fetchSearchMovies = async (query) => {
-  try {
-    const response = await axios.get(`${BASE_URL}/search/movie`, {
-      params: {
-        api_key: API_KEY,
-        query: query, // Adicione o parâmetro de consulta para a pesquisa
-      },
-    });
-
-    return response.data.results;
-  } catch (error) {
-    console.error("Erro ao buscar filmes:", error);
-    throw error;
-  }
-};

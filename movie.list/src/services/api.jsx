@@ -14,7 +14,7 @@ export const fetchPopularMovies = async () => {
     });
     /* Retorna os dados achados */
     return response.data.results;
-  } catch (error) {
+  } catch (error) 
     console.error("Erro ao buscar filmes populares:", error);
     throw error;
   }
